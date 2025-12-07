@@ -70,5 +70,5 @@ export async function BskyEmbed({ url, maxWidth, colorMode = "system" }: BskyEmb
   html = html.replace(/data-bluesky-embed-color-mode="[^"]*"/, `data-bluesky-embed-color-mode="${colorMode}"`);
  }
 
- return <div dangerouslySetInnerHTML={{ __html: html }} />;
+ return <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />;
 }

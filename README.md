@@ -2,6 +2,8 @@
 
 A React Server Component for embedding Bluesky posts using the [oEmbed API](https://docs.bsky.app/docs/advanced-guides/oembed).
 
+This is a wrapper for [embed.bsky.app](https://embed.bsky.app) as a component.
+
 ## Installation
 
 ```bash

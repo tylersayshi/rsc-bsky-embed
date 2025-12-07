@@ -50,11 +50,9 @@ async function getOEmbed(url: string, maxWidth?: number): Promise<OEmbedResponse
  * @returns A React element containing the embedded post - same as https://embed.bsky.app result
  *
  * @example
- * // Embed a Bluesky post with default settings
  * <BskyEmbed url="https://bsky.app/profile/tylur.dev/post/3m34dacmoyc2g" />
  *
  * @example
- * // Embed with custom width and dark mode
  * <BskyEmbed
  *   url="https://bsky.app/profile/tylur.dev/post/3m34dacmoyc2g"
  *   maxWidth={400}

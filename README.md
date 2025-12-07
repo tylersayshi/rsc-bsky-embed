@@ -1,17 +1,17 @@
-# bsky-embed
+# rsc-bsky-embed
 
 A React Server Component for embedding Bluesky posts using the [oEmbed API](https://docs.bsky.app/docs/advanced-guides/oembed).
 
 ## Installation
 
 ```bash
-npm install bsky-embed
+npm install rsc-bsky-embed
 ```
 
 ## Usage
 
 ```tsx
-import { BskyEmbed } from "bsky-embed";
+import { BskyEmbed } from "rsc-bsky-embed";
 
 export default function Page() {
   return <BskyEmbed url="https://bsky.app/profile/tylur.dev/post/3m34dacmoyc2g" />;

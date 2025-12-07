@@ -3,6 +3,10 @@
  "version": "1.0.1",
  "description": "Generate Bluesky post embeds from post URLs",
  "type": "module",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/tylersayshi/rsc-bsky-oembed.git"
+ },
  "exports": {
   ".": {
    "import": "./dist/index.js",

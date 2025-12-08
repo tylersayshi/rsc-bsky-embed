@@ -62,11 +62,7 @@ async function getOEmbed(url: string, maxWidth?: number): Promise<OEmbedResponse
 export async function BskyEmbed({ url, maxWidth, colorMode = "system" }: BskyEmbedProps) {
  const oembed = await getOEmbed(url, maxWidth);
 
- let html = oembed.html;
-
- if (colorMode !== "system") {
-  html = html.replace(/data-bluesky-embed-color-mode="[^"]*"/, `data-bluesky-embed-color-mode="${colorMode}"`);
- }
+ const html = oembed.html.replace("<blockquote", `<blockquote data-bluesky-embed-color-mode="${colorMode}"`);
 
  return <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />;
 }

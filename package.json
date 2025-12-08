@@ -5,7 +5,7 @@
  "type": "module",
  "repository": {
   "type": "git",
-  "url": "git+https://github.com/tylersayshi/rsc-bsky-oembed.git"
+  "url": "git+https://github.com/tylersayshi/rsc-bsky-embed.git"
  },
  "exports": {
   ".": {

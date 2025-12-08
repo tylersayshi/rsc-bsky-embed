@@ -1,6 +1,6 @@
 {
  "name": "rsc-bsky-embed",
- "version": "1.0.7",
+ "version": "1.0.8",
  "description": "Generate Bluesky post embeds from post URLs",
  "type": "module",
  "repository": {

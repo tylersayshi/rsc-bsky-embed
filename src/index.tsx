@@ -41,6 +41,8 @@ async function getOEmbed(url: string, maxWidth?: number): Promise<OEmbedResponse
  *
  * Fetches embed HTML from Bluesky's oEmbed endpoint and renders the post
  * as an interactive widget. Supports customizable width and color modes.
+ * Please use the account DID! It will be durable across changes in the handle.
+ * https://pds.ls/ is an easy way to lookup your DID
  *
  * @see {@link https://docs.bsky.app/docs/advanced-guides/oembed} Bluesky oEmbed API documentation
  *
@@ -50,11 +52,11 @@ async function getOEmbed(url: string, maxWidth?: number): Promise<OEmbedResponse
  * @returns A React element containing the embedded post - same as https://embed.bsky.app result
  *
  * @example
- * <BskyEmbed url="https://bsky.app/profile/tylur.dev/post/3m34dacmoyc2g" />
+ * <BskyEmbed url="https://bsky.app/profile/did:plc:4gt3dbmp4pydjiemob4konzm/post/3m34dacmoyc2g" />
  *
  * @example
  * <BskyEmbed
- *   url="https://bsky.app/profile/tylur.dev/post/3m34dacmoyc2g"
+ *   url="https://bsky.app/profile/did:plc:4gt3dbmp4pydjiemob4konzm/post/3m34dacmoyc2g"
  *   maxWidth={400}
  *   colorMode="dark"
  * />
